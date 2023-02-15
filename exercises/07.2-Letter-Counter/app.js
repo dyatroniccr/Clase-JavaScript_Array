@@ -2,5 +2,17 @@ let par = "Lorem ipsum dolor sit amet consectetur adipiscing elit Curabitur eget
 let counts = {};
 
 // your code here
+let newPar = par.toLowerCase().replaceAll(' ', '');
 
+for(i=0; i<newPar.length; i++){
+    let letra = newPar[i];
+    console.log(letra);
+    if (letra in counts){
+        console.log(newPar[i]);
+    } else {
+        //let obj= {letra: 1};
+        //counts.push(obj);
+    }
+    
+}
 console.log(counts);
